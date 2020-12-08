@@ -19,6 +19,35 @@ public class Player
 
     /**
      *
+     * @return
+     */
+    public int getScore()
+    {
+        return score;
+    }
+
+    public void resetScore()
+    {
+        score = 0;
+    }
+
+    public void increaseScore(int amount)
+    {
+        if(amount > 0)
+            score += amount;
+    }
+
+    /**
+     *
+     * @param count
+     */
+    public void setCount(int count)
+    {
+        this.count = count;
+    }
+
+    /**
+     *
      */
     public void print()
     {
